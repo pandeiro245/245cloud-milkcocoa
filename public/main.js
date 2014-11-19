@@ -1,6 +1,13 @@
 var milkcocoa = new MilkCocoa("https://io-ui2n0gy4p.mlkcca.com");
 
 var chatDataStore = milkcocoa.dataStore("chat");
+
+milkcocoa.dataStore('chat').query().limit(30).done(function(data) {
+  for (var i = 0; i < data.length; i ++ ) {
+    addText(data[i].message);
+  }
+});
+
 var textArea, board;
 window.onload = function(){
   textArea = document.getElementById("msg");
