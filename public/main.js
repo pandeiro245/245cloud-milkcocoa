@@ -1,4 +1,4 @@
-var milkcocoa = new MilkCocoa("https://io-ui2n0gy4p.mlkcca.com");
+var milkcocoa = new MilkCocoa("https://io-ui2n0gy4p.mlkcca.com:443");
 
 var chatDataStore = milkcocoa.dataStore("chat");
 
